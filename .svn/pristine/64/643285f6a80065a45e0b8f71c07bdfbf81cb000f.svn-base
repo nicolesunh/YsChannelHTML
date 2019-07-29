@@ -1,0 +1,50 @@
+<template>
+  <div class="ysChannelCallCenter">
+    <YsChannelNav :parentToChild="addActive"></YsChannelNav>
+    <div class="ysChannelCallCenterAll">
+         <div class="ysChannelCallCenterAllBd">
+                              中心
+          </div> 
+    </div>
+    <YsChannelFooter :parentToChild="isShow"></YsChannelFooter>
+  </div>
+</template>
+
+<script>
+  import YsChannelNav from "../.././components/YsChannelCommon/YsChannelNav"
+  import YsChannelFooter from "../.././components/YsChannelCommon/YsChannelFooter"
+  export default {
+    name: "YsChannelCallCenter",
+    data(){
+      return{
+        addActive:"YsChannelCallCenter",
+        isShow:"YsChannelCallCenter"
+      }
+    },
+    components: {
+      YsChannelNav:YsChannelNav,
+      YsChannelFooter:YsChannelFooter
+
+    },
+    created:function () {
+
+    },
+    methods:{
+
+    }
+  }
+</script>
+
+<style  lang = scss scoped>
+  .ysChannelCallCenterAll{
+    width: 100%;
+    background: #ffffff;
+     padding-top: 20px;
+    .ysChannelCallCenterAllBd{
+      width: 1170px;
+      margin: 0 auto;
+      min-height: 820px;
+      background: #ffffff;
+    }
+  }
+</style>

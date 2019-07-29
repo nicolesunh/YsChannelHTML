@@ -1,0 +1,50 @@
+<template>
+    <div class="ysChannelHome">
+        <YsChannelNav :parentToChild="addActive"></YsChannelNav>
+        <div class="ysChannelHomeAll">
+          <div class="ysChannelHomeAllBd">
+                     首页内容
+          </div>
+        </div>
+        <YsChannelFooter :parentToChild="isShow"></YsChannelFooter>
+    </div>
+</template>
+
+<script>
+    import YsChannelNav from "../.././components/YsChannelCommon/YsChannelNav"
+    import YsChannelFooter from "../.././components/YsChannelCommon/YsChannelFooter"
+    export default {
+        name: "YsChannelHome",
+        data(){
+          return{
+            addActive:"YsChannelHome",
+            isShow:"YsChannelHome"
+          }
+        },
+        components: {
+          YsChannelNav:YsChannelNav,
+          YsChannelFooter:YsChannelFooter
+
+        },
+        created:function () {
+
+        },
+        methods:{
+
+        }
+    }
+</script>
+
+<style  lang = scss scoped>
+  .ysChannelHomeAll{
+    width: 100%;
+    background: #ffffff;
+    padding-top: 20px;
+    .ysChannelHomeAllBd{
+      width: 1170px;
+      margin: 0 auto;
+      min-height: 600px;
+      background: #ffffff;
+    }
+  }
+</style>

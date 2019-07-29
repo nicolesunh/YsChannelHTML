@@ -1,0 +1,50 @@
+<template>
+  <div class="ysChannelSituation">
+    <YsChannelNav :parentToChild="addActive"></YsChannelNav>
+    <div class="ysChannelSituationAll">
+         <div class="ysChannelSituationAllBd">
+                            状况
+          </div> 
+    </div>
+    <YsChannelFooter :parentToChild="isShow"></YsChannelFooter>
+  </div>
+</template>
+
+<script>
+  import YsChannelNav from "../.././components/YsChannelCommon/YsChannelNav"
+  import YsChannelFooter from "../.././components/YsChannelCommon/YsChannelFooter"
+  export default {
+    name: "YsChannelSituation",
+    data(){
+      return{
+        addActive:"YsChannelSituation",
+        isShow:"YsChannelSituation"
+      }
+    },
+    components: {
+      YsChannelNav:YsChannelNav,
+      YsChannelFooter:YsChannelFooter
+
+    },
+    created:function () {
+
+    },
+    methods:{
+
+    }
+  }
+</script>
+
+<style  lang = scss scoped>
+  .ysChannelSituationAll{
+    width: 100%;
+    background: #ffffff;
+    padding-top: 20px;
+    .ysChannelSituationAllBd{
+      width: 1170px;
+      margin: 0 auto;
+      min-height: 820px;
+      background: #ffffff;
+    }
+  }
+</style>
