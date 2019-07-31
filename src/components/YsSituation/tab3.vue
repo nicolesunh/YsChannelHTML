@@ -4,18 +4,18 @@
       
         <div class="myFrame">
                   <el-tabs tab-position="top" v-model="activeName" type=" "  @tab-click="goweb" >
-                    <el-tab-pane label="海浪预报" name="first" :key="first">
+                    <el-tab-pane label="海浪预报" name="first" >
                       <img class="hailang" src="http://www.dhybzx.org/yubao/image/hyybImg/lang.jpg">
                     </el-tab-pane>
-                    <el-tab-pane label="潮汐预报" name="second" :key="second">
-                      <tab2></tab2>
+                    <el-tab-pane label="潮汐预报">
+                    
                       <img class="hailang2" width="500px"  src="http://www.dhybzx.org/yubao/image/tide/cx_00.png">
                     </el-tab-pane>
-                    <el-tab-pane label="灾害预警" name="third" :key="third">
-                      <tab3></tab3>
+                    <el-tab-pane label="灾害预警" name="third">
+                      
                     </el-tab-pane>
-                    <el-tab-pane label="海流图" name="fouth" :key="fouth">
-                      <tab4></tab4>
+                    <el-tab-pane label="海流图" name="fouth">
+                     
                       <img class="hailang3" width="500px"  src="http://www.dhybzx.org/yubao/image/current/k_00.png">
                     </el-tab-pane>
                   </el-tabs>
