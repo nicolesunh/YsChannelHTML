@@ -1,5 +1,5 @@
 <template>
-  <div class="news">
+  <div class="news" v-if="msg!=''">
     <a class= "xinwen" href="http://www.shisc.net/archives/category/home/zxzx/">新闻资讯</a>
       <div class="zixun">
         <el-row :gutter="10" type="flex" class="row-bg" justify="center">
@@ -76,7 +76,7 @@ import axios from "axios";
     name: " ",
     data(){
       return{
-        msg:' ',
+        msg:'',
       }
     },
     mounted(){ //then获取成功；response成功后的返回值（对象）
